@@ -51,4 +51,10 @@ $(document).ready(function () {
       });
     }
   });
+  $(".counter").each(function () {
+    var element = $(this);
+    var endVal = parseInt(element.text());
+
+    element.countup(endVal);
+  });
 });
